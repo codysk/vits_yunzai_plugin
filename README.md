@@ -15,7 +15,7 @@ qq群：433567006 （由于崩三模型还在不停炼，懒得每次都上传�
 4.  现已支持显卡推演，速度提高30-50倍，实测单核cpu推演生成189字句子需要6min，RTX2060显卡只需要3-5秒即可生成。开启gpu推演需要你有显卡和正确安装对应版本cuda，输入开启gpu/关闭gpu。
 5.  测试目前安装情况，需要查漏补缺，在yunzai根目录下运行
     ```
-    python ./plugins/vits-yunzai-Plugin/vits/run_new.py --character=0 --text=你好啊，做一个测试。
+    python ./plugins/vits_yunzai_plugin/vits/run_new.py --character=0 --text=你好啊，做一个测试。
     ```
     它会告诉你现在哪个包缺失。然后根据报错去常见问题查看解决方案。也可以自行进行判断，输入 pip list 查看当前环境依赖安装情况。
 
@@ -29,7 +29,7 @@ https://www.bilibili.com/video/BV1ot4y1P7a7
 
 1.  yunzai根目录下输入
     ```
-    git clone https://gitee.com/sumght/vits_yunzai_plugin.git ./plugins/vits-yunzai-Plugin/
+    git clone https://gitee.com/sumght/vits_yunzai_plugin.git ./plugins/vits_yunzai_plugin/
     ```
 2.  将ys.pth权重文件放入本目录文件夹下vits/ys/目录下
     下载地址:
@@ -144,7 +144,7 @@ https://www.bilibili.com/video/BV1ot4y1P7a7
 
 7.  如果出现没报错或者是显示着成功但是不生成的情况，去yunzai根目录运行指令
     ```
-    python ./plugins/vits-yunzai-Plugin/vits/run_new.py --character=0 --text=你好啊，做一个测试。
+    python ./plugins/vits_yunzai_plugin/vits/run_new.py --character=0 --text=你好啊，做一个测试。
     ```
     看看那儿有没有报错，yunzai根目录有没有生成example.wav
 
